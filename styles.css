@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e6e6e6);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de la bandera */
+.bandera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Bandera más ancha */
+.bandera {
+    display: flex;
+    width: 500px;  /* Aumentado para hacerla más ancha */
+    height: 250px; /* Ligeramente más alta para mantener proporciones */
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Colores de la bandera */
+.color-box {
+    flex: 1;
+    transition: background 0.3s ease-in-out;
+}
+
+.blanco {
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centrar y hacer blanco el escudo */
+.bandera img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /*filter: brightness(0) saturate(100%) invert(100%); /* Ajustado para hacer el escudo blanco sin perder detalles */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Controles */
+.sliders {
+    display: flex;
+    gap: 20px;
+}
+
+.slider-container {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="range"] {
+    width: 150px;
+    cursor: pointer;
+}

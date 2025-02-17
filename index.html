@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bandera de México</h1>
+    <br> Desarrollado por: <br>
+        "Cesar Gabriel Garcia Enzastiga 21200649"
+        <br> "Mariana Lozano Alameda 21200655"
+    <div class="bandera-container">
+        <div class="bandera">
+            <div class="color-box" id="verdeBox"></div>
+            <div class="color-box blanco"></div>
+            <img src="./Coat_of_arms_of_Mexico.svg.png" width="200" height="150">
+            <div class="color-box" id="rojoBox"></div>
+        </div>
+        <div class="sliders">
+            <div class="slider-container">
+                <label for="verde">Esperanza</label>
+                <input type="range" id="verde" min="0" max="255" value="128">
+                <p id="verdeCode">#008000</p>
+            </div>
+            <div class="slider-container">
+                <label for="rojo">Sangre de nuestros héroes</label>
+                <input type="range" id="rojo" min="0" max="255" value="128">
+                <p id="rojoCode">#800000</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
